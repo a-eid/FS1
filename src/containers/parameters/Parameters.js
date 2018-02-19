@@ -112,15 +112,20 @@ class Nav extends Component {
               className={classnames("parameters__nav__item__inner", {
                 "parameters__nav__item--active": this.state.expanded,
               })}
+              onClick={this.expanNav}
             >
               <div>
                 <i className="fas fa-align-left" aria-hidden="true" />
                 <span>Main</span>
               </div>
-              <i className="fas fa-chevron-left" aria-hidden="true" onClick={this.expanNav} />
+              <i className="fas fa-chevron-left" aria-hidden="true" />
             </div>
           </div>
-          <div className="parameters__nav__items">
+          <div
+            className={classnames("parameters__nav__items", {
+              "parameters__nav__items--collapes": !this.state.expanded,
+            })}
+          >
             <NavItem text="Parameters" icon="fa-bars" />
             <NavItem text="Charts" icon="fa-chart-pie" />
             <NavItem text="Barometers" icon="fa-tachometer-alt" />

@@ -151,6 +151,7 @@
 
 .parameters__nav__item {
   padding: 20px 0;
+  cursor: pointer;
 }
 .parameters__nav__item__inner {
   max-width: 190px;
@@ -181,9 +182,18 @@
 .parameters__nav__expandees {
 }
 
+.parameters__nav__items{
+  transition: all 0.4s cubic-bezier(0.82, -0.87, 0, 2.61);
+}
+
+.parameters__nav__items--collapes{
+  max-height: 0;
+  overflow: hidden;
+}
+
 .parameters__sidebar__buttons {
   max-width: 190px;
-  margin: 0 auto;
+  margin: 10px auto;
   display: flex;
   flex-direction: column;
 }
