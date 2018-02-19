@@ -37,6 +37,7 @@
   font-size: 1.5em;
   position: relative;
   margin: 0 10px;
+  cursor: pointer;
 }
 .parameters__user__status__icon > span {
   font-size: 11px;
@@ -53,6 +54,7 @@
 }
 .parameters__user__status__profile {
   display: flex;
+  cursor: pointer;
 }
 
 .parameters__user__status__profile > div {
