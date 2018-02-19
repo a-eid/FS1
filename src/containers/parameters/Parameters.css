@@ -183,7 +183,9 @@
 }
 
 .parameters__nav__items{
+  max-height: 1000px;
   transition: all 0.4s cubic-bezier(0.82, -0.87, 0, 2.61);
+  overflow: hidden;
 }
 
 .parameters__nav__items--collapes{
