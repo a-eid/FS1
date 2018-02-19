@@ -156,6 +156,9 @@
   padding: 20px 0;
   cursor: pointer;
 }
+.parameters__nav__item:hover{
+  background-color: #6f6ce5;
+}
 .parameters__nav__item__inner {
   max-width: 190px;
   margin: 0 auto;
