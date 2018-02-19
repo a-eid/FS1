@@ -94,6 +94,7 @@
 }
 .parameters__control__right {
   display: flex;
+  padding-right: 38px;
 }
 .parameters__control__right > div{
   display: flex;
