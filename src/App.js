@@ -6,7 +6,7 @@ class App extends Component {
   state = {}
   render() {
     return (
-      <div className="...">
+      <div className="wrapper">
         <Parameters />
       </div>
     )
