@@ -5,7 +5,11 @@ import "./App.css"
 class App extends Component {
   state = {}
   render() {
-    return <Parameters />
+    return (
+      <div >
+        <Parameters />
+      </div>
+    )
   }
 }
 
