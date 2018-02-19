@@ -1,0 +1,45 @@
+html,
+body,
+.wrapper {
+  min-height: 100vh;
+}
+
+/* global */
+.card__shadow {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  border-radius: 4px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* background-color: rgb(116, 111, 246); */
+  background-color: #f9f9f9;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+  max-width: 1450px;
+  margin: 0 auto;
+  /* border: 1px solid white; */
+  /* padding: 1px; */
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+.small__label {
+  font-size: 0.8em;
+  color: #bbb;
+}
