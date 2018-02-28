@@ -1,0 +1,63 @@
+.Parameters
+  display: flex
+  min-height: 100px
+  background-color: #f9f9f9
+
+.Parameters__content
+  flex: 10
+  margin-left: 50px
+  h3
+    font-size: 24px 
+    margin: 35px 0
+    color: #888888
+
+  
+
+.Parameters__image
+  flex: 6
+  background: blue
+  background-image: url("./parameters_bg.png")
+
+
+.Parameters__cards
+  display: flex
+  padding-bottom: 70px
+
+.Parameters__card
+  padding: 25px 70px
+  background-color: #fdfdfd
+
+.Parameters__card__values 
+  flex: 3 
+  // applied for labels as well (flexbox)
+  margin-left: 20px
+  margin-right: 50px
+
+.Parameters__card__labels 
+  flex: 5
+
+.Parameters__card__label 
+  display: block
+  padding: 25px 0;
+  &--new
+    padding-top: 35px
+    display: flex 
+    flex-direction: column
+    > span:first-child 
+      display: inline
+      > span
+        padding: 3px 4px; 
+        border-radius: 4px;
+        background-color: #e74c3c
+        color: white
+        font-size: 12px
+
+
+.Parameters__card__value
+  display: block
+  // padding: 25px 0;
+  padding: 10px 0;
+  &--new
+    // padding-top: 35px
+  input 
+    height: 40px
