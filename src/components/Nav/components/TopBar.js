@@ -34,7 +34,7 @@ class TopBar extends Component {
 const NumberIcon = ({ number, icon }) => (
   <div className="NumberIcon">
     <span>{number}</span>
-    <i class={`far fa-${icon}`} />
+    <i className={`far fa-${icon}`} />
   </div>
 )
 

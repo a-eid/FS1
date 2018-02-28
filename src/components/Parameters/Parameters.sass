@@ -15,8 +15,9 @@
 
 .Parameters__image
   flex: 6
-  background: blue
   background-image: url("./parameters_bg.png")
+  background-repeat: no-repeat;
+  background-size: 100% 100%
 
 
 .Parameters__cards
@@ -36,28 +37,48 @@
 .Parameters__card__labels 
   flex: 5
 
-.Parameters__card__label 
-  display: block
-  padding: 25px 0;
+
+.Parameters__card__label
+  line-height: 40px
+
+.Parameters__card__label, 
+.Parameters__card__value input
+  height: 40px
+  // line-height: 40px 
+  margin-top: 24px;
+  color: #494949
+
+.Parameters__card__label--new
+ height: 64px
+ line-height: 100px
+
+.Parameters__card__label,
+.Parameters__card__value,
   &--new
-    padding-top: 35px
-    display: flex 
-    flex-direction: column
-    > span:first-child 
-      display: inline
-      > span
-        padding: 3px 4px; 
-        border-radius: 4px;
-        background-color: #e74c3c
-        color: white
-        font-size: 12px
+    margin-top: 30px
+    position: relative
+    span 
+      position: absolute
+      top: 20px
+      left: 0
+      font-size: 12px
+      color: white 
+      background-color: #e74c3c
+      line-height: 1
+      padding: 3px 4px 
+      border-radius: 4px
 
 
-.Parameters__card__value
-  display: block
-  // padding: 25px 0;
-  padding: 10px 0;
-  &--new
-    // padding-top: 35px
-  input 
-    height: 40px
+
+.Parameters__card__value input
+  width: 100%
+  border-radius: 4px
+  border: 1px solid #ededed
+  outline-color: #716dfe
+  outline-width: 2px
+  font-size: 18px
+  padding-left: 20px
+
+
+
+

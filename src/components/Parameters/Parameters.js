@@ -9,17 +9,18 @@ class Parameters extends Component {
           <h3>General Parameters and Defaults</h3>
           <div className="Parameters__cards">
             <div className="Parameters__card Parameters__card__labels">
-              <span className="Parameters__card__label">Para 1 Days:</span>
-              <span className="Parameters__card__label">Para 2 Mit:</span>
-              <span className="Parameters__card__label">Para 3 Std:</span>
-              <span className="Parameters__card__label">Leverage:</span>
-              <span className="Parameters__card__label Parameters__card__label--new">
-                <span><span>New</span></span>
-                <span>Input Date Starting Date:</span>
-              </span>
-              <span className="Parameters__card__label">Input Date End Date:</span>
-              <span className="Parameters__card__label">Results Starting Date:</span>
-              <span className="Parameters__card__label">Results End Date:</span>
+              <div className="Parameters__card__label">Para 1 Days:</div>
+              <div className="Parameters__card__label">Para 2 Mit:</div>
+              <div className="Parameters__card__label">Para 3 Std:</div>
+              <div className="Parameters__card__label">Leverage:</div>
+
+              <div className="Parameters__card__label Parameters__card__label--new">
+                <span>New</span>
+                Input Date Starting Date:
+              </div>
+              <div className="Parameters__card__label">Input Date End Date:</div>
+              <div className="Parameters__card__label">Results Starting Date:</div>
+              <div className="Parameters__card__label">Results End Date:</div>
             </div>
             <div className="Parameters__card Parameters__card__values">
               <div className="Parameters__card__value">
