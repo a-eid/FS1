@@ -1,8 +1,7 @@
 import React, { Component } from "react"
-
-import DatePicker from "react-datepicker"
-import moment from "moment"
 import "./Parameters.sass"
+// import DatePicker from "react-datepicker"
+// import moment from "moment"
 
 class Parameters extends Component {
   state = {
