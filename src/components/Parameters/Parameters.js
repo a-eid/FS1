@@ -1,7 +1,17 @@
 import React, { Component } from "react"
+
+import DatePicker from "react-datepicker"
+import moment from "moment"
 import "./Parameters.sass"
 
 class Parameters extends Component {
+  state = {
+    dataStartDate: null,
+    dataEndDate: null,
+    resultStartDate: null,
+    resultEndDate: null,
+  }
+
   render() {
     return (
       <div className="Parameters">
@@ -36,16 +46,16 @@ class Parameters extends Component {
                 <input type="text" />
               </div>
               <div className="Parameters__card__value Parameters__card__value--new">
-                <input type="text" />
+                <input type="text" className="dateIcon" />
               </div>
               <div className="Parameters__card__value">
-                <input type="text" />
+                <input type="text" className="dateIcon" />
               </div>
               <div className="Parameters__card__value">
-                <input type="text" />
+                <input type="text" className="dateIcon" />
               </div>
               <div className="Parameters__card__value">
-                <input type="text" />
+                <input type="text" className="dateIcon"/>
               </div>
             </div>
           </div>
