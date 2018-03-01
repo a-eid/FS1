@@ -1,12 +1,20 @@
 import React from "react"
 import Switch from "react-switch"
 
-export default ({ checked, name, onChange }) => (
+export default ({
+  checked,
+  name,
+  onChange,
+  onColor = "#fff",
+  onHandleColor = "#27ae60",
+  offColor = "#fff",
+  offHandleColor = "#fafafa",
+}) => (
   <Switch
-    onColor="#fff"
-    onHandleColor="#27ae60"
-    offColor="#fff"
-    offHandleColor="#fafafa"
+    onColor={onColor}
+    onHandleColor={onHandleColor}
+    offColor={offColor}
+    offHandleColor={offHandleColor}
     handleDiameter={30}
     uncheckedIcon={false}
     checkedIcon={false}
