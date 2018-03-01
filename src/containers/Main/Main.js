@@ -23,11 +23,12 @@ class Main extends Component {
   render() {
     return (
       <div className="Main">
-        <ExposureManagement opened={this.state.opened} closed={this.state.closed} toggleButton={this.toggleButton} />
+      <h1>Main</h1>
+        {/* <ExposureManagement opened={this.state.opened} closed={this.state.closed} toggleButton={this.toggleButton} />
         <TradingRebalancing />
         <AutomatingTrading />
         <HedgePerformance />
-        <HistoricalPerformance />
+        <HistoricalPerformance /> */}
       </div>
     )
   }
