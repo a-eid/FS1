@@ -1,0 +1,65 @@
+html 
+  box-sizing: border-box
+*, *:before, *:after 
+  box-sizing: inherit
+
+body
+  margin: 0
+  padding: 0
+  font-family: Montserrat, sans-serif
+
+.wrapper 
+  background-color: #f9f9f9
+
+// shared styles 
+.page__header
+  font-size: 24px 
+  margin: 35px 0
+  color: #888888
+
+// for consistence heights
+.card__item 
+  height: 65px 
+  display: flex
+  align-items: center
+  // margin-left: 70px
+  font-size: 17px
+  font-weight: 700
+  color: #494949
+
+  &--new 
+    height: 75px
+
+input 
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #ededed;
+  outline-color: #716dfe;
+  outline-width: 2px;
+  font-size: 18px;
+  padding-left: 20px;
+  height: 40px
+
+.blue 
+  color: #716dfe
+.green
+  color: #27ae60
+
+.red 
+  color: #e74c3c
+
+
+.react-switch-handle 
+  height: 20px !important
+  width: 20px !important
+  top: 4px !important
+.react-switch-handle[aria-checked=true]
+  transform: translateX(25px) !important
+.react-switch-handle[aria-checked=false]
+  transform: translateX(4px) !important
+
+.switch__label 
+  color: #888888 
+  margin-right: 15px
+  font-size: 17px
+  font-weight: 600

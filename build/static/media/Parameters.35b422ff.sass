@@ -1,0 +1,79 @@
+.Parameters
+  display: flex
+  min-height: 100px
+  background-color: #f9f9f9
+
+.Parameters__content
+  flex: 10
+  margin-left: 50px
+
+  
+
+.Parameters__image
+  flex: 6
+  background-image: url("./parameters_bg.png")
+  background-repeat: no-repeat;
+  background-size: 100% 100%
+
+
+.Parameters__cards
+  display: flex
+  padding-bottom: 70px
+
+.Parameters__card
+  padding: 25px 70px
+  background-color: #fdfdfd
+
+.Parameters__card__values 
+  flex: 3 
+  // applied for labels as well (flexbox)
+  margin-left: 20px
+  margin-right: 50px
+
+.Parameters__card__labels 
+  flex: 5
+
+
+.Parameters__card__label
+  line-height: 40px
+
+.Parameters__card__label, 
+.Parameters__card__value input
+  height: 40px
+  // line-height: 40px 
+  margin-top: 24px;
+  color: #494949
+
+.Parameters__card__label--new
+ height: 64px
+ line-height: 100px
+
+.Parameters__card__label,
+.Parameters__card__value,
+  position: relative
+  &--new
+    margin-top: 30px
+    span 
+      position: absolute
+      top: 20px
+      left: 0
+      font-size: 12px
+      color: white 
+      background-color: #e74c3c
+      line-height: 1
+      padding: 3px 4px 
+      border-radius: 4px
+
+
+
+.Parameters__card__value input
+  width: 100%
+  border-radius: 4px
+  border: 1px solid #ededed
+  outline-color: #716dfe
+  outline-width: 2px
+  font-size: 18px
+  padding-left: 20px
+
+.dateIcon
+  background: url("./icons/date.png") no-repeat scroll 95% 10px;
