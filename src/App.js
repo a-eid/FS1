@@ -1,17 +1,22 @@
 import React, { Component } from "react"
+import { BrowserRouter, Route } from "react-router-dom"
 // import Parameters from "./containers/parameters/Parameters"
-import Nav from "./components/Nav/Nav"
-import Parameters from "./components/Parameters/Parameters"
+import Nav from "./containers/Nav/Nav"
+import Parameters from "./containers/Parameters/Parameters"
+import Main from "./containers/Main/Main"
 import "./App.sass"
 
 class App extends Component {
   state = {}
   render() {
     return (
-      <div className="wrapper">
-        <Nav />
-        <Parameters />
-      </div>
+      <BrowserRouter>
+        <div className="wrapper">
+          <Nav />
+          <Route exact path="/" component={Main} />
+          <Route path="/parameters" component={Parameters} />
+        </div>
+      </BrowserRouter>
     )
   }
 }
