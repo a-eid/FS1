@@ -12,8 +12,8 @@ class App extends Component {
       <BrowserRouter>
         <div className="wrapper">
           <Nav />
-          <Route exact path="/" component={Main} />
-          <Route exact path="/parameters" component={Parameters} />
+          {/* <Route exact path="/" component={Main} /> */}
+          {/* <Route exact path="/parameters" component={Parameters} /> */}
         </div>
       </BrowserRouter>
     )
