@@ -6,14 +6,13 @@ import "./Introduction.sass"
 
 class Introduction extends Component {
   handleScroll = e => {
-    if(window.scrollY >= 170){
+    if (window.scrollY >= 170) {
       document.querySelector(".introduction__right").classList.add("fix__it")
     }
-    if(window.scrollY < 170){
+    if (window.scrollY < 170) {
       document.querySelector(".introduction__right").classList.remove("fix__it")
     }
   }
-
 
   componentWillMount() {
     document.querySelector("body").classList.add("scrollY")

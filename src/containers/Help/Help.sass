@@ -1,11 +1,29 @@
 .Help 
   display: flex
-  min-height: 100px
+  min-height: calc(100vh - 170px)
+  
+  
+.Help__right,
+.Help__left
+  padding-top: 60px
 
 .Help__left
-  flex: 1
-  background-color: blue
-  
-.Help__right
   flex: 2
-  background-color: red
+  display: flex
+  flex-direction: column
+  // justify-content: center
+  align-items: center
+
+.Help__right
+  flex: 3
+  background-color: #716dfe
+
+.HelPLeftHeader 
+  margin-bottom: 60px
+  width: 320px
+  line-height: 1.8
+  font-size: 18px
+  font-weight: 700
+  cursor: pointer
+  h3
+    margin: 0
