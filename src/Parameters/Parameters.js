@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import Nav from "../containers/Nav/Nav"
 import "./Parameters.sass"
 // import DatePicker from "react-datepicker"
 // import moment from "moment"
@@ -13,6 +14,8 @@ class Parameters extends Component {
 
   render() {
     return (
+      <div >
+      <Nav />
       <div className="Parameters">
         <div className="Parameters__content">
           <h3 className="page__header">General Parameters and Defaults</h3>
@@ -60,6 +63,7 @@ class Parameters extends Component {
           </div>
         </div>
         <div className="Parameters__image" />
+      </div>
       </div>
     )
   }

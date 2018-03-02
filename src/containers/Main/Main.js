@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import Switch from "../components/Switch"
+import Nav from "../Nav/Nav"
 import ExposureManagement from "./components/ExposureManagement"
 import TradingRebalancing from "./components/TradingRebalancing"
 import AutomatingTrading from "./components/AutomatingTrading"
@@ -22,16 +23,18 @@ class Main extends Component {
 
   render() {
     return (
-      <div className="Main">
-        <ExposureManagement opened={this.state.opened} closed={this.state.closed} toggleButton={this.toggleButton} />
-        <TradingRebalancing />
-        <AutomatingTrading />
-        <HedgePerformance />
-        <HistoricalPerformance />
+      <div>
+        <Nav />
+        <div className="Main">
+          <ExposureManagement opened={this.state.opened} closed={this.state.closed} toggleButton={this.toggleButton} />
+          <TradingRebalancing />
+          <AutomatingTrading />
+          <HedgePerformance />
+          <HistoricalPerformance />
+        </div>
       </div>
     )
   }
 }
-
 
 export default Main
