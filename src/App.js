@@ -4,6 +4,7 @@ import Parameters from "./Parameters/Parameters"
 import Main from "./containers/Main/Main"
 import Nav from "./containers/Nav/Nav"
 import Login from "./containers/Login/Login"
+import Intro from "./containers/Intro/Intro"
 import "./App.sass"
 
 class App extends Component {
@@ -16,6 +17,7 @@ class App extends Component {
           <Route exact path="/" component={Main} />
           <Route path="/login" component={Login} />
           <Route path="/parameters" component={Parameters} />
+          <Route path="/intro" component={Intro} />
         </div>
       </BrowserRouter>
     )
