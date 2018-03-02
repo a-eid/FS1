@@ -31,7 +31,7 @@ class Introduction extends Component {
         <div className="Introduction">
           <div className="introduction__left">
             <div className="introduction__content">
-              <h3 class="page__header">Current Exposure Management</h3>
+              <h3 className="page__header">Current Exposure Management</h3>
               <div className="introduction__card">
                 <ExpandCard title="Why currency exposure risk management" expanded={true}>
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis tempora laboriosam veritatis

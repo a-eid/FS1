@@ -1,8 +1,13 @@
 import React, { Component } from "react"
+import { withRouter } from "react-router-dom"
 
 import "./Intro.sass"
 
 class Intro extends Component {
+  enter = () => {
+    const { history: { push } } = this.props
+    push("/auth")
+  }
   render() {
     return (
       <div className="intro__page flexCenter">
@@ -10,11 +15,13 @@ class Intro extends Component {
         <div className="intro__page__content flexCenter">
           <img src={require("./logo_s1_flat.png")} alt="S1" />
           <h3>S1 Technologies LLC</h3>
-          <button className="button button--intro">ENTER NOW</button>
+          <button className="button button--intro" onClick={this.enter}>
+            ENTER NOW
+          </button>
         </div>
       </div>
     )
   }
 }
 
-export default Intro
+export default withRouter(Intro)

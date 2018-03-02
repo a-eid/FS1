@@ -5,7 +5,7 @@ import "./NavContent.sass"
 
 class NavContent extends Component {
   navItems = [
-    { name: "Main", to: "/" },
+    { name: "Main", to: "/main" },
     { name: "Introduction", to: "/introduction" },
     { name: "Parameters", to: "/parameters" },
     { name: "Charts", to: "/charts" },

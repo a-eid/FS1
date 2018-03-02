@@ -6,15 +6,15 @@ const HistoricalPerformance = ({}) => (
     <SectionHeader text="Historical Culminative Performance" />
     <div className="main__section">
       <div className="main__section_1c">
-        <div class="card__item">
+        <div className="card__item">
           <span>No Hedge</span>
           <span className="car__item__sub">&nbsp;(Culminative):</span>
         </div>
-        <div class="card__item">
+        <div className="card__item">
           <span>No Hedge</span>
           <span className="car__item__sub">&nbsp;(Culminative):</span>
         </div>
-        <div class="card__item">
+        <div className="card__item">
           <span>No Hedge</span>
           <span className="car__item__sub">&nbsp;(Culminative):</span>
         </div>

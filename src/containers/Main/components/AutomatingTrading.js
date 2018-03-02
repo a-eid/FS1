@@ -7,7 +7,7 @@ const AutomatingTrading = ({}) => (
     <SectionHeader text="Automated Trading and Rebalancing" />
     <div className="main__section">
       <div className="main__section_1c">
-        <div class="card__item">
+        <div className="card__item">
           <span>Automated Trading: </span>
         </div>
       </div>
