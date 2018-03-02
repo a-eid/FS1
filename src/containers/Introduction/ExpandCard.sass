@@ -7,6 +7,7 @@
   border-radius: 5px
   max-height: 60px
   transition: max-height 0.5s ease-in-out
+  user-select: none
   &.ExpandCard--expanded
     max-height: 1000px
 
@@ -41,4 +42,6 @@
 .ExpandCard--expanded .ExpandCard__icon 
   transform: rotate(180deg)
 .ExpandCard__body
+  line-height: 1.7
   padding-bottom: 20px
+  color: #888888
