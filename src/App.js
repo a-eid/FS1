@@ -2,9 +2,9 @@ import React, { Component } from "react"
 import { BrowserRouter, Route } from "react-router-dom"
 import Parameters from "./Parameters/Parameters"
 import Main from "./containers/Main/Main"
-import Nav from "./containers/Nav/Nav"
 import Login from "./containers/Login/Login"
 import Intro from "./containers/Intro/Intro"
+import Introduction from "./containers/Introduction/Introduction"
 import "./App.sass"
 
 class App extends Component {
@@ -18,6 +18,7 @@ class App extends Component {
           <Route path="/login" component={Login} />
           <Route path="/parameters" component={Parameters} />
           <Route path="/intro" component={Intro} />
+          <Route path="/introduction" component={Introduction} />
         </div>
       </BrowserRouter>
     )

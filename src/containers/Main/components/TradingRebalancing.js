@@ -1,5 +1,5 @@
 import React from "react"
-import { SectionHeader } from "./shared"
+import { SectionHeader } from "../../components/shared"
 import Switch from "../../components/Switch"
 
 const TradingRebalancing = ({}) => (

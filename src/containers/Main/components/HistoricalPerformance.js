@@ -1,6 +1,5 @@
 import React from "react"
-import { SectionHeader } from "./shared"
-import Switch from "../../components/Switch"
+import { SectionHeader } from "../../components/shared"
 
 const HistoricalPerformance = ({}) => (
   <div className="main__section__container">
