@@ -3,6 +3,7 @@ import { BrowserRouter, Route } from "react-router-dom"
 import Parameters from "./Parameters/Parameters"
 import Main from "./containers/Main/Main"
 import Nav from "./containers/Nav/Nav"
+import Login from "./containers/Login/Login"
 import "./App.sass"
 
 class App extends Component {
@@ -13,7 +14,8 @@ class App extends Component {
         <div className="wrapper">
           <Nav />
           <Route exact path="/" component={Main} />
-          <Route exact path="/parameters" component={Parameters} />
+          <Route path="/login" component={Login} />
+          <Route path="/parameters" component={Parameters} />
         </div>
       </BrowserRouter>
     )
