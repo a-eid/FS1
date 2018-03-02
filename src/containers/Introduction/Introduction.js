@@ -5,6 +5,12 @@ import ExpandCard from "./ExpandCard"
 import "./Introduction.sass"
 
 class Introduction extends Component {
+  componentWillMount(){
+    document.querySelector("body").classList.add("scrollY")
+  }
+  componentWillUnmount(){
+    document.querySelector("body").classList.remove("scrollY")
+  }
   state = {}
   render() {
     return (
