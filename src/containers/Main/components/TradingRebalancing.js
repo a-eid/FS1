@@ -72,7 +72,7 @@ const TradingRebalancing = ({}) => (
 const TradingSecondRow = ({ className }) => (
   <div className={className}>
     <div className="card__item">
-      <Switch checked={false} offHandleColor="#e74c3c" name={"TODO"} onChange={f => f} />
+      <Switch checked={false} offHandleColor="#e74c3c" offColor="#eee" name={"TODO"}  onChange={f => f} />
     </div>
     <div className="card__item">
       <span className="Blue">USD/EUR</span>

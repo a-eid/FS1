@@ -4,7 +4,7 @@ import Switch from "../../components/Switch"
 
 const HedgePerformance = ({}) => (
   <div className="main__section__container">
-    <SectionHeader text="Automated Trading and Rebalancing" />
+    <SectionHeader text="Hedge Performance" />
     <div className="main__section">
       <div className="main__section_1c">
         <div class="card__item">

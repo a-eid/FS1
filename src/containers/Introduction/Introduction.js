@@ -5,12 +5,25 @@ import ExpandCard from "./ExpandCard"
 import "./Introduction.sass"
 
 class Introduction extends Component {
-  componentWillMount(){
+  handleScroll = e => {
+    if(window.scrollY >= 170){
+      document.querySelector(".introduction__right").classList.add("fix__it")
+    }
+    if(window.scrollY < 170){
+      document.querySelector(".introduction__right").classList.remove("fix__it")
+    }
+  }
+
+
+  componentWillMount() {
     document.querySelector("body").classList.add("scrollY")
+    window.addEventListener("scroll", this.handleScroll)
   }
-  componentWillUnmount(){
+  componentWillUnmount() {
     document.querySelector("body").classList.remove("scrollY")
+    window.removeEventListener("scroll", this.handleScroll)
   }
+
   state = {}
   render() {
     return (

@@ -14,13 +14,13 @@ const AutomatingTrading = ({}) => (
       <div className="main__section_1c flexCenter">
         <div className="flexCenter m0">
           <span className="switch__label">Open</span>
-          <Switch checked={true} name={"opened"} onChange={f => f} />
+          <Switch checked={true} onColor="#eee" offColor="#eee" name={"opened"} onChange={f => f} />
         </div>
       </div>
       <div className="main__section_1c flexCenter">
         <div className="flexCenter m0">
           <span className="switch__label">Closed</span>
-          <Switch checked={false} name={"opened"} onChange={f => f} />
+          <Switch checked={false} onColor="#eee" offColor="#eee" name={"opened"} onChange={f => f} />
         </div>
       </div>
       <div className="noBackground" />

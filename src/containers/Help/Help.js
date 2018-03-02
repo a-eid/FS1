@@ -9,7 +9,8 @@ class Help extends Component {
       <div>
         <Nav />
         <div className="Help">
-        ...
+          <div className="Help__left"></div> 
+          <div className="Help__right"></div>
         </div>
       </div>
     )
