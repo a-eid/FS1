@@ -1,0 +1,58 @@
+.ChartCard 
+  flex: 1
+  display: flex
+  flex-direction: column
+  background-color: #fff
+  position: relative 
+
+.ChartCard__body 
+    background-image: url("./Line.svg")
+    flex: 1
+
+.ChartCard__head 
+  height: 55px
+  display: flex
+  justify-content: center
+  align-items: center
+  span
+    color: #494949
+    font-size: 18px
+    font-weight: 600
+
+.ChartCard__footer 
+  position: absolute
+  height: 50px
+  bottom: 0 
+  left: 0 
+  right: 0
+  display: flex
+  align-items: center
+  justify-content: center
+
+.ChartCard__color 
+  margin-right: 25px
+  &:last-child
+    margin-right: 0
+
+.ChartCard__color > span:first-child
+  width: 15px 
+  height: 15px 
+  border-radius: 50%
+  margin-right: 10px
+
+
+.ChartCard__color 
+  display: flex
+  align-items: center
+  justify-content: center
+
+.ChartCard__color--blue
+  background-color: #6366ae
+.ChartCard__color--green
+  background-color: #27ae60
+.ChartCard__color--red
+  background-color: #e74c3c
+  
+.Charts__row 
+  .ChartCard:nth-child(2)
+    margin-left: 35px

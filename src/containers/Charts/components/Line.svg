@@ -1,0 +1,10 @@
+<svg width="55" height="100%" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <linearGradient id="Gradient1">
+      <stop offset="20px" stop-color="blue"/>
+    </linearGradient>
+  </defs>
+
+  <rect fill-rule="evenodd"  fill-opacity="0.25" fill="rgb(225, 225, 225)" width="1" height="100%"/>
+</svg>
