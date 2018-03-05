@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import { NavLink as Link } from "react-router-dom"
-import classnames from "classnames"
+// import classnames from "classnames"
+import { withRouter } from "react-router-dom"
 import "./NavContent.sass"
 
 class NavContent extends Component {
@@ -18,13 +19,18 @@ class NavContent extends Component {
   }
 }
 
-const NavContentItem = ({ icon, name, active, to }) => (
+const NavContentItem = withRouter(({ icon, name, active, to, match }) => (
   <Link exact activeClassName="nav__item--active" to={to}>
+    {console.log(match)}
     <div className="NavContentItem">
-      <img src={require(`./icons/${name.toLowerCase()}.png`)} alt={`${name}-icon`} />
+      {match.url.startsWith(`/${name.toLowerCase()}`) ? (
+        <img src={require(`./icons/${name.toLowerCase()}-active.png`)} alt={`${name}-icon`} />
+      ) : (
+        <img src={require(`./icons/${name.toLowerCase()}.png`)} alt={`${name}-icon`} />
+      )}
       <span>{name}</span>
     </div>
   </Link>
-)
+))
 
-export default NavContent
+export default withRouter(NavContent)
