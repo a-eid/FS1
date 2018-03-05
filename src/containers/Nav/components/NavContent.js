@@ -21,7 +21,6 @@ class NavContent extends Component {
 
 const NavContentItem = withRouter(({ icon, name, active, to, match }) => (
   <Link exact activeClassName="nav__item--active" to={to}>
-    {console.log(match)}
     <div className="NavContentItem">
       {match.url.startsWith(`/${name.toLowerCase()}`) ? (
         <img src={require(`./icons/${name.toLowerCase()}-active.png`)} alt={`${name}-icon`} />

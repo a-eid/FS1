@@ -22,7 +22,7 @@ class TopBar extends Component {
                 <h5>Welcome Back</h5>
                 <span>John</span>
               </div>
-              <img src={require("./profile.png")} alt="user_image"/>
+              <img src={require("./profile.png")} alt="user_image" />
             </div>
           </div>
         </div>

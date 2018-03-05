@@ -9,39 +9,39 @@ const HedgePerformance = ({}) => (
       <div className="main__section_1c">
         <div className="card__item">
           <span> No Hedge</span>
-          <span className="car__item__sub">&nbsp;(Maximum):</span>
+          <span className="card__item__sub">&nbsp;(Maximum):</span>
         </div>
         <div className="card__item">
           <span> No Hedge</span>
-          <span className="car__item__sub">&nbsp;(Minimum):</span>
+          <span className="card__item__sub">&nbsp;(Minimum):</span>
         </div>
         <div className="card__item">
           <span> No Hedge</span>
-          <span className="car__item__sub">&nbsp;(Medien):</span>
+          <span className="card__item__sub">&nbsp;(Medien):</span>
         </div>
         <div className="card__item">
           <span> Dynamic S1 Hedge</span>
-          <span className="car__item__sub">&nbsp;(Medien):</span>
+          <span className="card__item__sub">&nbsp;(Medien):</span>
         </div>
         <div className="card__item">
           <span> Dynamic S1 Hedge</span>
-          <span className="car__item__sub">&nbsp;(Medien):</span>
+          <span className="cardd__item__sub">&nbsp;(Medien):</span>
         </div>
         <div className="card__item">
           <span> Dynamic S1 Hedge</span>
-          <span className="car__item__sub">&nbsp;(Medien):</span>
+          <span className="card__item__sub">&nbsp;(Medien):</span>
         </div>
         <div className="card__item">
           <span> Dynamic S1 Hedge</span>
-          <span className="car__item__sub">&nbsp;(Medien):</span>
+          <span className="card__item__sub">&nbsp;(Medien):</span>
         </div>
         <div className="card__item">
           <span> Dynamic S1 Hedge</span>
-          <span className="car__item__sub">&nbsp;(Medien):</span>
+          <span className="card__item__sub">&nbsp;(Medien):</span>
         </div>
         <div className="card__item">
           <span> Dynamic S1 Hedge</span>
-          <span className="car__item__sub">&nbsp;(Medien):</span>
+          <span className="card__item__sub">&nbsp;(Medien):</span>
         </div>
       </div>
       <div className="main__section_1c">

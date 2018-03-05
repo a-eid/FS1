@@ -19,11 +19,11 @@ const TradingRebalancing = ({}) => (
         </div>
         <div className="card__item">
           <span>Exposure Amount</span>
-          <span className="car__item__sub">(Currency 1):</span>
+          <span className="card__item__sub">(Currency 1):</span>
         </div>
         <div className="card__item">
           <span>Exposure Amount</span>
-          <span className="car__item__sub">(Currency 2):</span>
+          <span className="card__item__sub">(Currency 2):</span>
         </div>
         <div className="card__item">
           <span>Starting Date:</span>
@@ -33,15 +33,15 @@ const TradingRebalancing = ({}) => (
         </div>
         <div className="card__item">
           <span>Prediction</span>
-          <span className="car__item__sub">(Low):</span>
+          <span className="card__item__sub">(Low):</span>
         </div>
         <div className="card__item">
           <span>Prediction</span>
-          <span className="car__item__sub">(Mid):</span>
+          <span className="card__item__sub">(Mid):</span>
         </div>
         <div className="card__item">
           <span>Prediction</span>
-          <span className="car__item__sub">(High)</span>
+          <span className="card__item__sub">(High)</span>
         </div>
         <div className="card__item">
           <span>Hedge Ratio:</span>
