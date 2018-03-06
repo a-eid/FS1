@@ -5,7 +5,7 @@ export const loginRequest = () => ({
 })
 
 export const loginFailure = error => ({
-  type: at.LOGIN_FAILURE,
+  type: at.LOGIN_ERROR,
   payload: {
     error,
   },

@@ -12,6 +12,8 @@ import Disclaimer from "./containers/Disclaimer/Disclaimer"
 import Contact from "./containers/Contact/Contact"
 import Client from "./containers/Client/Client"
 import "./App.sass"
+// import 'react-datepicker/dist/react-datepicker.css';
+import 'react-datepicker/dist/react-datepicker-cssmodules.css'
 
 class App extends Component {
   state = {}

@@ -23,7 +23,7 @@ class Contact extends Component {
               <div className="Contact__card card__shadow">
                 <textarea type="text" placeholder="Your phone (optional)" />
               </div>
-              <button>
+              <button className="button">
                 SEND
               </button>
             </div>

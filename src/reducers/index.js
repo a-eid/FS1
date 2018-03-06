@@ -1,12 +1,6 @@
 import { combineReducers } from "redux"
+import parameters from "./parameters"
 
-const initState = {
-  // don't know yet :(
-}
-
-export default (state = initState, action) => {
-  switch (action.type) {
-    default:
-      return state
-  }
-}
+export default combineReducers({
+  parameters
+})

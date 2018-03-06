@@ -88,12 +88,12 @@ export const getAllPortfolios = data => dispatch => {
     })
 }
 export const getAllUsers = data => dispatch => {
-  const { getAllUsersError, getAllUsersRequest, getAllUsersError } = actions
+  const { getAllUsersError, getAllUsersRequest, getAllUsersSuccess } = actions
   dispatch(getAllUsersRequest())
   api
     .getAllUsers(data)
     .then(res => {
-      dispatch(actions.getAllUsersSuccess(res.data))
+      dispatch(getAllUsersSuccess(res.data))
     })
     .catch(error => {
       dispatch(getAllUsersError(error))
