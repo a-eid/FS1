@@ -11,6 +11,8 @@ import Help from "./containers/Help/Help"
 import Disclaimer from "./containers/Disclaimer/Disclaimer"
 import Contact from "./containers/Contact/Contact"
 import Client from "./containers/Client/Client"
+import ServerError from "./containers/ServerError/ServerError"
+import NotFound from "./containers/NotFound/NotFound"
 import "./App.sass"
 // import 'react-datepicker/dist/react-datepicker.css';
 import 'react-datepicker/dist/react-datepicker-cssmodules.css'
@@ -33,6 +35,8 @@ class App extends Component {
           <Route path="/Disclaimer" component={Disclaimer} />
           <Route path="/contact" component={Contact} />
           <Route path="/client" component={Client} />
+          <Route path="/500" component={ServerError} />
+          <Route path="/*" component={NotFound} />
         </div>
       </BrowserRouter>
     )

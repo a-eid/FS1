@@ -1,0 +1,22 @@
+.Error
+  height: 100vh
+  background-color: #716dfe
+  display: flex
+  flex-direction: column
+
+.Error__message
+  flex: 1
+  display: flex
+  justify-content: center
+  align-items: center
+  overflow: hidden
+  h1
+    transition: transform 0.5s cubic-bezier(0, 0.77, 0, 2.26), opacity 0.5s ease
+    transform: translateY(400px)
+    opacity: 0
+    font-size: 4em
+    color: white
+
+.Error__message--animated > h1 
+  transform: translateY(0)
+  opacity: 1
