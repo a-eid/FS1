@@ -14,7 +14,6 @@ import Client from "./containers/Client/Client"
 import ServerError from "./containers/ServerError/ServerError"
 import NotFound from "./containers/NotFound/NotFound"
 import "./App.sass"
-// import 'react-datepicker/dist/react-datepicker.css';
 import "react-datepicker/dist/react-datepicker-cssmodules.css"
 
 class App extends Component {

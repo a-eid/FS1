@@ -1,4 +1,5 @@
 import React from "react"
+import { connect } from "react-redux"
 import { SectionHeader } from "../../components/shared"
 
 const HistoricalPerformance = ({}) => (
@@ -36,4 +37,4 @@ const HistoricalPerformance = ({}) => (
   </div>
 )
 
-export default HistoricalPerformance
+export default connect()(HistoricalPerformance)

@@ -1,4 +1,5 @@
 import React from "react"
+import { connect } from "react-redux"
 import { SectionHeader } from "../../components/shared"
 import Switch from "../../components/Switch"
 
@@ -80,4 +81,4 @@ const HedgePerformance = ({}) => (
   </div>
 )
 
-export default HedgePerformance
+export default connect()(HedgePerformance) 

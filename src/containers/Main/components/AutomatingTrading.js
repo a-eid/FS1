@@ -1,4 +1,5 @@
 import React from "react"
+import { connect } from "react-redux"
 import { SectionHeader } from "../../components/shared"
 import Switch from "../../components/Switch"
 
@@ -28,4 +29,4 @@ const AutomatingTrading = ({}) => (
   </div>
 )
 
-export default AutomatingTrading
+export default connect()(AutomatingTrading)

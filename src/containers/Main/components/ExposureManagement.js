@@ -1,4 +1,6 @@
 import React from "react"
+
+import { connect } from "react-redux"
 import Switch from "../../components/Switch"
 
 const ExposureManagement = ({ opened, closed, toggleButton }) => (
@@ -146,4 +148,4 @@ const ExposureHeader = ({ opened, closed, toggleButton }) => (
   </div>
 )
 
-export default ExposureManagement
+export default connect()(ExposureManagement) 
