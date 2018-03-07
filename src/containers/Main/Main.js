@@ -1,5 +1,4 @@
 import React, { Component } from "react"
-import Switch from "../components/Switch"
 import Nav from "../Nav/Nav"
 import ExposureManagement from "./components/ExposureManagement"
 import TradingRebalancing from "./components/TradingRebalancing"

@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import { BrowserRouter, Route } from "react-router-dom"
+import { BrowserRouter, Route, Switch } from "react-router-dom"
 import Parameters from "./Parameters/Parameters"
 import Main from "./containers/Main/Main"
 import Auth from "./containers/Auth/Auth"
@@ -15,7 +15,7 @@ import ServerError from "./containers/ServerError/ServerError"
 import NotFound from "./containers/NotFound/NotFound"
 import "./App.sass"
 // import 'react-datepicker/dist/react-datepicker.css';
-import 'react-datepicker/dist/react-datepicker-cssmodules.css'
+import "react-datepicker/dist/react-datepicker-cssmodules.css"
 
 class App extends Component {
   state = {}
@@ -23,20 +23,22 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div className="wrapper">
-          <Route exact path="/" component={Intro} />
-          <Route exact path="/main" component={Main} />
-          <Route path="/auth" component={Auth} />
-          <Route path="/parameters" component={Parameters} />
-          <Route path="/intro" component={Intro} />
-          <Route path="/introduction" component={Introduction} />
-          <Route path="/charts" component={Charts} />
-          <Route path="/barometers" component={Barometers} />
-          <Route path="/help" component={Help} />
-          <Route path="/Disclaimer" component={Disclaimer} />
-          <Route path="/contact" component={Contact} />
-          <Route path="/client" component={Client} />
-          <Route path="/500" component={ServerError} />
-          <Route path="/*" component={NotFound} />
+          <Switch>
+            <Route exact path="/" component={Intro} />
+            <Route exact path="/main" component={Main} />
+            <Route path="/auth" component={Auth} />
+            <Route path="/parameters" component={Parameters} />
+            <Route path="/intro" component={Intro} />
+            <Route path="/introduction" component={Introduction} />
+            <Route path="/charts" component={Charts} />
+            <Route path="/barometers" component={Barometers} />
+            <Route path="/help" component={Help} />
+            <Route path="/Disclaimer" component={Disclaimer} />
+            <Route path="/contact" component={Contact} />
+            <Route path="/client" component={Client} />
+            <Route path="/500" component={ServerError} />
+            <Route path="/*" component={NotFound} />
+          </Switch>
         </div>
       </BrowserRouter>
     )

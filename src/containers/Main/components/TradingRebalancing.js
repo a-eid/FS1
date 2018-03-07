@@ -1,4 +1,5 @@
 import React from "react"
+import { connect } from "react-redux"
 import { SectionHeader } from "../../components/shared"
 import Switch from "../../components/Switch"
 
@@ -72,7 +73,7 @@ const TradingRebalancing = ({}) => (
 const TradingSecondRow = ({ className }) => (
   <div className={className}>
     <div className="card__item">
-      <Switch checked={false} offHandleColor="#e74c3c" offColor="#eee" name={"TODO"}  onChange={f => f} />
+      <Switch checked={false} offHandleColor="#e74c3c" offColor="#eee" name={"TODO"} onChange={f => f} />
     </div>
     <div className="card__item">
       <span className="Blue">USD/EUR</span>
@@ -130,4 +131,4 @@ const TradingSecondRow = ({ className }) => (
   </div>
 )
 
-export default TradingRebalancing
+export default connect()(TradingRebalancing)
