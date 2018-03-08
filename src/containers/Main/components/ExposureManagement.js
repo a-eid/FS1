@@ -89,10 +89,10 @@ const SecondRow = ({ className }) => (
       </span>
     </div>
     <div className="card__item">
-      <span className="blue">01,July,2018</span>
+      <span className="blue date">01,July,2018</span>
     </div>
     <div className="card__item">
-      <span className="blue">Continouse</span>
+      <span className="blue date">Continouse</span>
     </div>
     <div className="card__item">
       <span className="blue">0.7660</span>
