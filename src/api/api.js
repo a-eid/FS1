@@ -4,7 +4,13 @@ const baseURL = "http://52.90.148.239:5000/api/"
 var api = axios.create({
   baseURL,
   timeout: 2000,
-  // headers: { "X-Custom-Header": "foobar" },
+  headers: {
+    "Access-Control-Allow-Origin": "*",
+  },
+  proxy: {
+	  host: '52.90.148.239',
+	  port: 5000
+	}
 })
 
 export const getComputedParams = (queryString, data) => {

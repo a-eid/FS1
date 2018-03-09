@@ -41,6 +41,7 @@
     "react": "^16.2.0",
     "react-app-rewire-hot-loader": "^1.0.0",
     "react-app-rewired": "^1.4.1",
+    "react-cookie": "^2.1.4",
     "react-datepicker": "^1.2.1",
     "react-dev-utils": "^5.0.0",
     "react-dom": "^16.2.0",
